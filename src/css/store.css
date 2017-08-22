@@ -1,0 +1,127 @@
+.page{
+	overflow-y: auto;
+}
+
+.page .store-banner{
+	width: 100%;
+}
+.page .store-banner img{
+	width: 100%;
+}
+
+.shops-list{
+	background-color: #fff;
+	padding: 15px 0;
+	box-sizing: border-box;
+}
+.shops-list ul{width: 100%}
+.shops-list ul li{
+	width: 25%;
+	margin: 8px 0;
+	display: inline-block;
+	text-align: center;
+}
+.shops-list ul li img{
+	display: block;
+	width: 40px;
+	margin: 0 auto;
+	
+}
+.shops-list ul li span{
+	font-size: 12px;
+	color: #323232;
+}
+
+.hotImg{
+	width: 100%;
+	box-sizing: border-box;
+	background: white;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.hotImg img{
+	width: 50%;
+	padding: 10px;
+}
+
+.main-list{
+	width: 100%;
+	background: white;
+	padding: 10px 15px;
+	box-sizing: border-box
+}
+.main-list .mainBox .imgbox img{
+	display: block;
+	width: 100%;
+}
+.mainBox ul{
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.mainBox ul li{
+	display: inline-block;
+	width: 100px;
+	padding: 10 0px;
+}
+.mainBox ul li .minbox{
+	 width: 100%;
+	padding: 5px;
+}
+.mainBox ul li .minbox img{
+	display:block;
+	width: 100%; 
+	padding: 8px;
+}
+.mainBox ul li .minbox p{
+	font-size: 12px;
+	overflow-x: hidden;
+	color:#323232;
+	line-height: 14px;
+}
+.mainBox ul li .minbox span{
+	font-size: 13px;
+	color: #ff6640;
+	line-height: 26px;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+.container .title{
+	text-align: center;
+	font-size: 13px;
+	line-height: 33px;
+	margin-bottom: -5px;
+	background-color: #f2f2f2;
+}
+.container .item{
+	width: 100%;
+	padding:0 10px;
+}
+.container .item .item-list{
+	width: 48%;
+	height: 240px;
+	display: inline-block;
+	margin: 3px;
+	background: white;
+}
+.container .item .item-list img{
+	width: 100%;
+}
+.container .item .item-list .name{
+	font-size: 12px;
+    height: 34px;
+    color: #323232;
+    text-align: left;
+    padding-left: 6px;
+}
+.container .item .item-list .list-b .price{
+	color: #ff6640;	
+	font-size: 13px; 
+}
+.container .item .item-list .list-b .cont{
+	font-size: 9px;
+    color: #999;
+    margin-left: 15px;
+}

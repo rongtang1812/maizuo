@@ -1,0 +1,256 @@
+.main{
+	width: 100%;
+	padding: 0 15px;
+	overflow-y: auto;
+}
+
+.main .headerNav{
+	width: 100%;
+	height: 46px;
+	border-bottom: 1px solid #fe6e00;
+	box-sizing: border-box;
+	
+}
+.main .headerNav .list{
+	display: flex;
+}
+.main .headerNav .list li{
+	width: 50%;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	color:#6a6a6a ;
+	flex: 1;
+	cursor: pointer;	
+}
+.main .headerNav .list li.active{
+	border-bottom: 3px solid #fe6e00;
+}
+
+.main .content1{
+	position: absolute;
+	top: 95px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+
+
+.main .list2 li{
+	width: 100%;
+	display: flex;
+	padding:15px 0;
+	position: relative;
+	border-bottom: dashed 1px #c9c9c9;
+}
+.main .list2 li img{
+	display: block;
+	width: 60px;
+	height: 86px;
+}
+
+.main .list2 li .content{
+	margin-left: 15px;
+}
+.main .list2 li .content h5{
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: normal;
+}
+
+.main .list2 li .content .title{
+	font-size: 12px;
+	line-height: 24px;
+	color:#8e8e8e;
+}
+.main .list2 li .content .message{
+	font-size: 12px;
+	line-height: 24px;
+	color: #8e8e8e;
+	width: 250px;
+	display: flex;
+}
+.main .list2 li .content .message span{
+	display: block;
+	margin-right: 30px;	
+}
+.main .list2 li .content .message span i{
+	color: #8aa2bf;
+}
+.main .list2 li strong i{
+	display: block;
+	font-size: 16px;
+    line-height: 32px;
+    color: #fc7103;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: 100;
+    margin-right: 8px;
+}
+.main .list2 li strong {
+	color: #8e8e8e;
+	font-weight: 100;
+}
+
+
+/*list3*/
+.main .list3 li{
+	/*display: none;*/
+	width: 100%;
+	display: flex;
+	padding:15px 0;
+	position: relative;
+	border-bottom: dashed 1px #c9c9c9;
+}
+.main .list3 li img{
+	display: block;
+	width: 60px;
+	height: 86px;
+}
+
+.main .list3 li .content{
+	margin-left: 15px;
+}
+.main .list3 li .content h5{
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: normal;
+}
+
+.main .list3 li .content .title{
+	font-size: 12px;
+	line-height: 24px;
+	color:#8e8e8e;
+}
+.main .list3 li .content .message{
+	font-size: 12px;
+	line-height: 24px;
+	color: #8e8e8e;
+	width: 250px;
+	display: flex;
+}
+.main .list3 li .content .message span{
+	display: block;
+	margin-right: 30px;	
+}
+.main .list3 li .content .message span i{
+	color: #8aa2bf;
+}
+.main .list3 li strong i{
+	display: block;
+	font-size: 16px;
+    line-height: 32px;
+    color: #fc7103;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: 100;
+    margin-right: 8px;
+}
+.main .list3 li strong {
+	color: #8e8e8e;
+	font-weight: 100;
+}
+
+.card .cardTabs{
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #ff7100;
+}
+.card .cardTabs li{
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 45px;
+}
+.card .cardTabs li.active{
+	border-bottom: 3px solid #ff7100;
+}
+.card .cardBox div, .card .cardBox2 div{
+	width: 80%;
+	height: 10px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #c9c9c9;
+	border-top: none;
+	margin-top: 50px;
+	position: relative;
+	
+}
+.card .cardBox div input, .card .cardBox2 div input{
+	outline: none;
+	border: none;
+	background: #ebebeb;
+	line-height: 32px;
+	position: absolute;
+	left: 62px;
+	bottom:0px;
+}
+.card .cardBox div span, .card .cardBox2 div span{
+	position: absolute;
+	left: 10px;
+	bottom: 8px;
+}
+.card .cardBox .cardBnt, .card .cardBox2 .cardBnt{
+	display: block;
+	margin: 0 auto;
+	width: 160px;
+	background: #fe8233;
+	 height: 36px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+	border: none;
+	margin-top: 30px;
+	border-radius: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#me{
+	background: #f6f6f6;
+}
+
+#me input{
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+   	color: #555;
+    background: #f6f6f6;
+    outline: none;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+}
+#me input:nth-of-type(3){
+	width: 163px;
+	border:none;
+	border-radius: 36px;
+	color: white;
+	background: #fe8233;
+	    margin-top: 45px;
+}
+
