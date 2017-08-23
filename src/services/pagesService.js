@@ -38,8 +38,40 @@ function getCinemas(){
 	return new Promise((resolve,reject)=>{
 		axios.get(`${API.pagesCinemasApi}?__t=${new Date().getTime()}`)
 		.then((response)=>{
-//			console.log(response.data.data.cinemas);
-			resolve(response.data.data.cinemas)			
+			// console.log(response.data.data.cinemas);			
+			// resolve(response.data.data.cinemas)
+			// console.log(response.data.data.cinemas);			
+			var newArr = response.data.data.cinemas;
+			var arr1=[];
+			var arr2=[];
+			newArr.map((item,index)=>{
+				var player = item.district.name				
+				if(arr1.indexOf(player)==-1){
+					arr1.push(player)
+				}			
+			})
+			// console.log(arr1)
+			arr1.map((item,index)=>{
+			  arr2.push({
+                 title:item,
+				 arr:[]
+			  })	
+			})
+		
+			newArr.map((item,index)=>{
+				arr2.map((item2,index2)=>{  
+
+					console.log(1)
+					if (item2.title==item.district.name) {
+						item2.arr.push(item)					
+					}
+				})
+			
+				
+			})
+				 console.log(arr2)
+				resolve(arr2)
+				
 		})
 		.catch((error)=>{
 				console.log(error)
@@ -82,7 +114,7 @@ function getstroeGood(page){
 	return new Promise((resolve,reject)=>{
 		axios.get(`${API.stroeGoodApi}&page=${page}`)
 		.then((response)=>{
-			console.log(response.data.data.list)
+			// console.log(response.data.data.list)
 			resolve(response.data.data.list)
 		})
 		.catch((error)=>{

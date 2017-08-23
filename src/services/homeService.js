@@ -20,7 +20,7 @@ function getHomeConten(){
 	return new Promise((resolve,reject)=>{
 		axios.get(`${API.homeContenApi}?__t=${new Date().getTime()}`)
 		.then((response)=>{
-//			console.log(response.data.data.films)
+			console.log(response.data.data.films)
 			resolve(response.data.data.films)
 		})
 		.catch((error)=>{
@@ -42,6 +42,19 @@ function getHomeSoon(){
 		})
 	})
 }
+//详情页数据请求
+function getDetails(id){
+	return new Promise((resolve,reject)=>{
+		axios.get(`${API.detailsApi}${id}?__t=${new Date().getTime()}`)
+		.then((response)=>{
+			resolve(response.data)
+		})
+		.catch((error)=>{
+			console.log(error)
+		})
+	})
+}
+
 
 
 function test(){
@@ -55,9 +68,13 @@ function test(){
 }
 
 
+
+
+
 test();
 export default {
 	getHomeBanner,
 	getHomeConten,
-	getHomeSoon
+	getHomeSoon,
+	getDetails
 }

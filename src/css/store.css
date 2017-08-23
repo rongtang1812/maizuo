@@ -125,3 +125,61 @@
     color: #999;
     margin-left: 15px;
 }
+.main1 .contentbox .content-b{
+	background: white;
+	
+}
+
+.main1 .contentbox .title{
+	width: 100%;
+	height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 16px;
+    background: #e1e1e1;
+    margin-bottom: 1px;
+    color: #636363;
+    cursor: pointer;
+}
+.main1 .contentbox .cinemabox{
+	padding:15px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.main1 .contentbox .cinemabox::after{
+
+}
+.main1 .contentbox .cinemabox p{
+	font-size: 16px;
+	line-height: 32px;
+}
+.main1 .contentbox .cinemabox span{
+	display: block;
+	width: 200px;
+	font-size: 12px; 
+	line-height: 14px;
+	color: #ccc;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 10px;
+}
+.main1 .contentbox .cinemabox i{
+	font-size: 8px;
+	display: inline-block;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin: 0 5px;
+    font-style: normal;
+    color: #fff;
+    height: 15px;
+	line-height: 15px;
+	background: #51add0;
+}
+.main1 .contentbox .cinemabox i:nth-of-type(2){
+	background:#ff9658;
+}
+.main1 .contentbox .cinemabox em{
+	font-size: 12px;
+	color: #ccc;
+	font-style: normal
+}

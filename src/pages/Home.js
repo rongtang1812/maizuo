@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 //import ReactSwipe from 'react-swipe';
+import {Link} from 'react-router-dom'
 
 import homeService from '../services/homeService.js'
 
@@ -38,16 +39,18 @@ export default class Home extends Component{
 					{
 						this.state.contenData.map((item,index)=>{
 							return (
-								<li key={index}>
-									<img src={item.cover.origin}/>
-									<div class="main-bottom">
-										<h5>{item.name}</h5>
-										<p>
-										<span>{item.cinemaCount}家影院上映</span>
-										<span>{item.watchCount}人购买</span>
-										</p>
-										<span class="info">{item.grade}</span>
-									</div>
+								<li key={index} >
+									<Link to={"/details/"+item.id}>
+										<img src={item.cover.origin}/>
+										<div class="main-bottom">
+											<h5>{item.name}</h5>
+											<p>
+											<span>{item.cinemaCount}家影院上映</span>
+											<span>{item.watchCount}人购买</span>
+											</p>
+											<span class="info">{item.grade}</span>
+										</div>
+									</Link>
 								</li>
 							)
 						})
@@ -110,6 +113,7 @@ export default class Home extends Component{
 			loop: true
 		});
 	}
+	
 
 	
 }

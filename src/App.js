@@ -11,6 +11,7 @@ import Shop from './pages/Shop.js'
 import Me from './pages/Me.js'
 import Card from './pages/Card.js'
 import City from './pages/City.js'
+import Details from './pages/Details'
 
 
 import './css/app.css'
@@ -37,13 +38,14 @@ export default class App extends Component{
 									      hideHandle={this.menuHandle.bind(this)}/>
 					}}/>
 					
-					<Route path="/" exact component={Card}/>
+					<Route path="/" exact component={Home}/>
 					<Route path="/movies" component={Movies}/>
 					<Route path="/cinema" component={Cinema}/>
 					<Route path="/shop" component={Shop}/>
 					<Route path="/me" component={Me}/>
 					<Route path="/card" component={Card}/>
 					<Route path="/city-list" component={City}/>
+					<Route path="/details/:id" component={Details}/>
 					
 
 					

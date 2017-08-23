@@ -110,6 +110,7 @@ export default class Shop extends Component{
 			bannerSwiper.update();
 			
 		})
+		
 		pagesService.getShopList()
 		.then((data)=>{
 			

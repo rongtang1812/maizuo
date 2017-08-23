@@ -26,6 +26,11 @@ const stroeShopListApi="/api/ad/list"
 
 //商城好货精选 http://aura.maizuo.com/api/recommend/home?page=1&num=20
 const stroeGoodApi="/api/recommend/home?num=20"
+
+//详情页数据请求 http://m.maizuo.com/v4/api/film/3828?__t=1503477118233
+const detailsApi="/v4/api/film/"
+
+
 export default {
 	homeBannerApi,
 	homeContenApi,
@@ -35,6 +40,7 @@ export default {
 	pagesSoonplayApi,
 	stroeBannerApi,
 	stroeShopListApi,
-	stroeGoodApi
+	stroeGoodApi,
+	detailsApi
 }
 

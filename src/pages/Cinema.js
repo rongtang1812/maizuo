@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import pagesService from '../services/pagesService.js'
 
+import '../css/store.css'
+
 export default class Cinema extends Component{
 	constructor(){
 		super();
@@ -11,19 +13,33 @@ export default class Cinema extends Component{
 	render(){
 		return (
 			<div id="cinema" class="page">
-				<h1 class="title">宝安区</h1>
-				<div class="main">
-					<ul>
+				<div class="main1">
 					{
-						this.state.cinemaData.map((item,index)=>{														
+						this.state.cinemaData.map((item,index)=>{
 							return(
-								<li key={index}>
-									<h3>{item.name}</h3>
-								</li>
+								<div class="contentbox" key={index}>
+									<h1 class="title">{item.title}</h1>
+									<div class="content-b">
+										{
+											item.arr.map((item2,index2)=>{
+												return(
+													<div key={index2}>
+														<div class="cinemabox">
+															<p>{item2.name}</p>
+															<i>可乐爆米花</i><i>优惠活动</i>
+															<span>{item2.address}</span>
+															<em>距离未知</em>
+														</div>
+													</div>
+												)
+											})
+										}
+									</div>
+								</div>
 							)
 						})
 					}
-					</ul>
+				
 				</div>
 			</div>
 		)
@@ -32,6 +48,7 @@ export default class Cinema extends Component{
 		pagesService.getCinemas()
 		.then((data)=>{
 			this.setState({cinemaData:data})
+			console.log(this.state.cinemaData)
 		})
 	}
 	
