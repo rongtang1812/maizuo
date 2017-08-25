@@ -38,16 +38,18 @@ export default class Movies extends Component{
 						this.state.nowPlayData.map((item,index)=>{
 							return (
 								<li key={index}>
-									<img src={item.poster.origin}/>
-									<div class="content">
-										<h5>{item.name}</h5>
-										<p class="title">{item.intro}</p>
-										<p class="message">
-											<span><i>{item.cinemaCount}</i>家影院上映</span>
-											<span><i>{item.watchCount}</i>人购票</span>
-										</p>
-									</div>
-									<strong><i>{item.grade}</i>&gt;</strong>
+									<Link to={"/details/"+item.id}>
+										<img src={item.poster.origin}/>
+										<div class="content">
+											<h5>{item.name}</h5>
+											<p class="title">{item.intro}</p>
+											<p class="message">
+												<span><i>{item.cinemaCount}</i>家影院上映</span>
+												<span><i>{item.watchCount}</i>人购票</span>
+											</p>
+										</div>
+										<strong><i>{item.grade}</i>&gt;</strong>
+									</Link>
 								</li>
 							)
 						})

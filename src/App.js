@@ -12,6 +12,7 @@ import Me from './pages/Me.js'
 import Card from './pages/Card.js'
 import City from './pages/City.js'
 import Details from './pages/Details'
+import CinemaDetail from './pages/CinemaDetail.js'
 
 
 import './css/app.css'
@@ -46,7 +47,7 @@ export default class App extends Component{
 					<Route path="/card" component={Card}/>
 					<Route path="/city-list" component={City}/>
 					<Route path="/details/:id" component={Details}/>
-					
+					<Route path="/cinemadetail/:id" component={CinemaDetail}/>
 
 					
 				</div>

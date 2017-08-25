@@ -125,6 +125,9 @@
     color: #999;
     margin-left: 15px;
 }
+.main1 .contentbox{
+	overflow: hidden
+}
 .main1 .contentbox .content-b{
 	background: white;
 	
@@ -139,7 +142,9 @@
     background: #e1e1e1;
     margin-bottom: 1px;
     color: #636363;
-    cursor: pointer;
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+	
 }
 .main1 .contentbox .cinemabox{
 	padding:15px;

@@ -30,7 +30,10 @@ const stroeGoodApi="/api/recommend/home?num=20"
 //详情页数据请求 http://m.maizuo.com/v4/api/film/3828?__t=1503477118233
 const detailsApi="/v4/api/film/"
 
-
+//城市页面数据请求 http://m.maizuo.com/v4/api/city?__t=1503575434458
+const cityApi = "/v4/api/city"
+//影院详情页面请求 http://m.maizuo.com/v4/api/cinema/916?__t=1503632968532
+const cinemaDetailApi = "/v4/api/cinema/"
 export default {
 	homeBannerApi,
 	homeContenApi,
@@ -41,6 +44,8 @@ export default {
 	stroeBannerApi,
 	stroeShopListApi,
 	stroeGoodApi,
-	detailsApi
+	detailsApi,
+	cityApi,
+	cinemaDetailApi
 }
 
